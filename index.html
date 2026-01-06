@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OO JavaScript Shopping Cart</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h1>OO JavaScript Shopping Cart</h1>
+          <p class="subtitle">
+            Add products, view your cart, remove items — all using Object Oriented JavaScript.
+          </p>
+        </div>
+
+        <div class="badge">
+          <strong id="badgeItems">0</strong>
+          <span>items</span>
+          <span>|</span>
+          <strong id="badgeTotal">$0.00</strong>
+        </div>
+      </header>
+
+      <main class="grid">
+        <!-- PRODUCTS -->
+        <section class="card">
+          <div class="card-head">
+            <h2>Products</h2>
+            <p class="muted">Choose quantity and add</p>
+          </div>
+
+          <div class="card-body">
+            <!-- JS will render products here -->
+            <div class="products" id="products"></div>
+          </div>
+        </section>
+
+        <!-- CART -->
+        <aside class="card">
+          <div class="card-head">
+            <h2>Your Cart</h2>
+            <button class="btn danger" id="clearCartBtn" type="button">Clear Cart</button>
+          </div>
+
+          <div class="card-body">
+            <!-- JS will render cart here -->
+            <div id="cartList"></div>
+
+            <div class="summary">
+              <div class="summary-row">
+                <span>Total Items</span>
+                <strong id="totalItems">0</strong>
+              </div>
+              <div class="summary-row">
+                <span>Total Cost</span>
+                <strong id="totalCost">$0.00</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+
+      <footer>
+        Now connected: <span class="muted">index.html</span> → <span class="muted">script.js</span> → OO Cart Objects ✅
+      </footer>
+    </div>
+
+    <!-- Link your JS file -->
+    <script src="script.js"></script>
+  </body>
+</html>
